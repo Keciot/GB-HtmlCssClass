@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    margin: 0 auto;
+    width: 1280px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+.paddingSite {
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.pageHeader {
+    width: 100%;
+    background-color: #445161;
+    color: #ffffff;
+}
+
+.pageHeader:after,
+.about:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pageHeaderWrp {
+    float: left;
+}
+
+.pageHeaderTitle {
+    display: block;
+    margin: 0;
+    font-size: 59px;
+    line-height: 44px;
+    font-weight: normal;
+    margin: 0 0 41px 0;
+}
+
+.pageHeaderList {
+    margin: 0;
+    list-style: none;
+    padding: 0 0 0 0;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.pageHeaderListItem:before {
+    content: "";
+    display: inline-block;
+    /*Зачем использовать блок и потом position с тьмой его ограничений, если можно сразу задать inline-block? */
+    width: 25px;
+    height: 19px;
+    padding-right: 10px;
+    background: url(../img/check-icon.png) no-repeat;
+}
+
+.pageHeaderPic {
+    display: block;
+    float: right;
+    width: 469px;
+    min-height: 100px;
+    background-color: #fff;
+}
+
+.about {
+    background-color: #ffffff;
+    color: #445161;
+}
+
+.aboutWrp {
+    float: left;
+    max-width: 670px;
+}
+
+.sectionTitle {
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0 0 26px 0;
+    font-weight: normal;
+    color: #445161;
+}
+
+.aboutP {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.aboutPic {
+    display: block;
+    float: right;
+    width: 430px;
+    min-height: 100px;
+    background-color: #445161;
+}
+
+.dignity {
+    background-color: #f5f5f5;
+    padding-bottom: 25px;
+}
+
+.dignityTitle,
+.screenTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.dignityList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dignityList li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.5em;
+    max-width: 50%;
+    position: relative;
+    padding: 0 0 0 42px;
+    box-sizing: border-box;
+    margin: 0 0 25px 0;
+
+}
+
+.dignityList li::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/plus-icon.png) center center no-repeat;
+    background-color: #445161;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.screenWrp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.screenFig {
+    margin: 0;
+    padding: 0 15px 20px 0;
+    max-width: 50%;
+    box-sizing: border-box;
+
+}
+
+.screenFigPic {
+    display: block;
+    float: left;
+    width: 200px;
+    background-color: #445161;
+    margin: 0 10px 10px 0;
+}
+.screenFigTitle {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    color: #445161;
+    line-height: 1.25em;
+    font-weight: normal;
+}
+
+.screenFig p {
+font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+}
