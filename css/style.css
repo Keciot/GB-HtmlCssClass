@@ -428,6 +428,7 @@ textarea.contacts-form-field {
 
 .contacts-social-list a:hover {
     color: violet;
+/* Розовый. Я покрашу холодильник в розовый.  */
 }
 
 .contacts-social-list-pic::before {
