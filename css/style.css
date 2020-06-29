@@ -409,7 +409,7 @@ textarea.contacts-form-field {
 
 .contacts-social-list li {
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 18px;
 }
 
 .contacts-social-list a {
@@ -427,9 +427,38 @@ textarea.contacts-form-field {
     position: absolute;
     width: 26px;
     height: 26px;
-top: -5px;
-left: -30px;
-border: 1px solid white;
+    top: -5px;
+    left: -30px;
+}
+
+.skype::before {
+    background: url(../img/social-buttons/skype-icon.png) center center no-repeat;
+
+}
+
+
+.icq::before {
+    background: url(../img/social-buttons/icq-icon.png) center center no-repeat;
+
+}
+
+.email::before {
+    background: url(../img/social-buttons/email-icon.png) center center no-repeat;
+
+}
+
+.phone::before {
+    background: url(../img/social-buttons/phone-icon.png) center center no-repeat;
+
+}
+
+
+
+/* Вообще наверное подключение шрифта надо бы положить в шапку, но в данном случае он нигде больше не используется и пусть уже полежит тут. */
+
+@font-face {
+    font-family: socialico;
+    src: url(../fonts/socialico/Socialico-Regular.woff);
 }
 
 .contacts-social-links {
@@ -439,9 +468,10 @@ border: 1px solid white;
 }
 
 .contacts-social-links a {
+    font-family: socialico;
     display: block;
-    height: 42px;
-    width: 42px;
-    border: 1px solid white;
-    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 60px;
+
 }
