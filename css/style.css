@@ -395,6 +395,10 @@ textarea.contacts-form-field {
     border: none;
 }
 
+.contacts-form-submit:hover {
+    background-color: violet;
+}
+
 .contacts-social {
     width: 240px;
     margin-left: 46px;
@@ -420,6 +424,10 @@ textarea.contacts-form-field {
     color: #ffffff;
     position: relative;
 
+}
+
+.contacts-social-list a:hover {
+    color: violet;
 }
 
 .contacts-social-list-pic::before {
@@ -452,8 +460,6 @@ textarea.contacts-form-field {
 
 }
 
-
-
 /* Вообще наверное подключение шрифта надо бы положить в шапку, но в данном случае он нигде больше не используется и пусть уже полежит тут. */
 
 @font-face {
@@ -474,4 +480,8 @@ textarea.contacts-form-field {
     text-decoration: none;
     font-size: 60px;
 
+}
+
+.contacts-social-links a:hover {
+    color: violet;
 }
