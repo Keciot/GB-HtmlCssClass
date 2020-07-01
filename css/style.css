@@ -334,3 +334,155 @@ body {
     color: rgb(82, 82, 59);
     box-shadow: inset 0px 0px 5px black;
 }
+
+footer {
+    background-color: #445162;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 240px;
+}
+
+.contacts-title {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.contacts-form {
+    width: 500px;
+    text-align: center;
+}
+
+.contacts-form-field,
+.contacts-form-field::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contacts-form-field {
+    width: 100%;
+    padding: 6px 10px;
+    margin-bottom: 21px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    color: #445162;
+    outline: none;
+}
+
+.contacts-form-field::placeholder {
+    color: #445162;
+}
+
+textarea.contacts-form-field {
+    resize: none;
+    height: 170px;
+}
+
+.contacts-form-field:focus {
+    border-color: black;
+}
+
+.contacts-form-submit {
+    text-transform: uppercase;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #445162;
+    border: none;
+}
+
+.contacts-form-submit:hover {
+    background-color: violet;
+}
+
+.contacts-social {
+    width: 240px;
+    margin-left: 46px;
+}
+
+.contacts-social-list {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0 0 0;
+
+}
+
+.contacts-social-list li {
+    padding-left: 30px;
+    padding-bottom: 18px;
+}
+
+.contacts-social-list a {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    position: relative;
+
+}
+
+.contacts-social-list a:hover {
+    color: violet;
+/* Розовый. Я покрашу холодильник в розовый.  */
+}
+
+.contacts-social-list-pic::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -5px;
+    left: -30px;
+}
+
+.skype::before {
+    background: url(../img/social-buttons/skype-icon.png) center center no-repeat;
+
+}
+
+
+.icq::before {
+    background: url(../img/social-buttons/icq-icon.png) center center no-repeat;
+
+}
+
+.email::before {
+    background: url(../img/social-buttons/email-icon.png) center center no-repeat;
+
+}
+
+.phone::before {
+    background: url(../img/social-buttons/phone-icon.png) center center no-repeat;
+
+}
+
+/* Вообще наверное подключение шрифта надо бы положить в шапку, но в данном случае он нигде больше не используется и пусть уже полежит тут. */
+
+@font-face {
+    font-family: socialico;
+    src: url(../fonts/socialico/Socialico-Regular.woff);
+}
+
+.contacts-social-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contacts-social-links a {
+    font-family: socialico;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 60px;
+
+}
+
+.contacts-social-links a:hover {
+    color: violet;
+}
